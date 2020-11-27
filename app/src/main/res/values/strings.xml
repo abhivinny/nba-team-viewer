@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">NBA-Team-Viewer</string>
+    <string name="sort">Sort by</string>
+    <string name="name_asc">Name Asc</string>
+    <string name="name_dsc">Name Dsc</string>
+    <string name="win_asc">Win Asc</string>
+    <string name="win_dsc">Win Dsc</string>
+    <string name="loss_asc">Loss Asc</string>
+    <string name="loss_dsc">Loss Dsc</string>
+    <string name="save">Save</string>
+    <string name="sort_by">Sort By</string>
+    <string name="team">team</string>
+    <string name="team_name">Team Name</string>
+    <string name="wins">Wins</string>
+    <string name="losses">Losses</string>
 </resources>

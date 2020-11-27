@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/main_graph"
+    app:startDestination="@id/teamListFragment">
+
+    <fragment
+        android:id="@+id/teamListFragment"
+        android:name="com.score.nba.team.viewer.presentation.view.TeamListFragment"
+        android:label="NBA Team Viewer" >
+        <action
+            android:id="@+id/action_teamListFragment_to_teamFragment"
+            app:destination="@id/teamFragment" />
+        <action
+            android:id="@+id/action_teamListFragment_to_action_sort"
+            app:destination="@id/action_sort" />
+    </fragment>
+    <fragment
+        android:id="@+id/teamFragment"
+        android:name="com.score.nba.team.viewer.presentation.view.TeamInfoFragment"
+        android:label="Team Roster" >
+        <action
+            android:id="@+id/action_teamFragment_to_teamListFragment"
+            app:destination="@id/teamListFragment" />
+
+        <argument
+            android:name="@string/team"
+            app:argType="com.score.nba.team.viewer.core.domain.model.Team" />
+    </fragment>
+    <dialog
+        android:id="@+id/action_sort"
+        android:name="com.score.nba.team.viewer.presentation.view.SortDialogFragment"
+        android:label="SortDialogFragment" />
+</navigation>
