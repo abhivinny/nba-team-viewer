@@ -1,4 +1,4 @@
-# nba-team-viewer
+# NBA Team Viewer
 
 ## Problem
 Create an NBA teamview app based on criterias mentioned in https://github.com/scoremedia/nba-team-viewer
